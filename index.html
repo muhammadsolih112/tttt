@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TBT – Team beta </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="container nav-row">
+            <div class="logo"><span class="logo-mark"></span><span>TBT – TEAMᵇᵉᵗᵃ</span></div>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#vips">MASHXUR YOUTUBERLAR</a>
+            <a id="discordTop" href="#" target="_blank">Discord</a>
+            <div class="spacer"></div>
+            <a class="btn btn-ghost"  href="https://discord.gg/3yXjwGA2WU" id="pingBtn">bizga qoshiling</a>
+            <!-- <button class="btn btn-cta" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Ro'yxatdan o'tish</button> -->
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-img" aria-hidden="true"></div>
+        <div class="hero-veil" aria-hidden="true"></div>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content container">
+            <p class="kicker">O'zbekiston jamoasi</p>
+            <h1 class="title">TBT – Team</h1>
+            <p class="subtitle">Faol, sodiq va ijodkorlar uchun yopiq jamiyat. Qoidalarga rioya qilgan holda birgalikda rivojlanamiz. </p>
+            <div class="ip-box">
+                <div class="ip" id="statusText">Discordga qo'shiling</div>
+                <a class="btn btn-cta" id="discordHero" href="https://discord.gg/3yXjwGA2WU" target="_blank">Discordga o'tish</a>
+            </div>
+            <div class="stats">
+               <br>
+               
+                <div class="stat"><div class="kicker">Faollik talabi</div><div class="big">AKTIV BO'LISHINGIZ SHART!</div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- WHY / ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h2 style="font-family:'Chakra Petch',monospace; font-size:32px; margin:0 0 14px">Nima uchun TBT?</h2>
+            <p class="muted" style="max-width:840px">Bizda hurmat va tartib birinchi o'rinda. Har bir ishtirokchi shaffof qoidalar asosida saralanadi. Quyidagi afzalliklar bilan jamoaga qo'shiling:</p>
+            <div class="cards" style="margin-top:18px">
+                <div class="card"><h3>TBT TEAM</h3><p class="muted">Minecraft beast team</p></div>
+                <div style="cursor: pointer;" class="card"><h3 onclick="showRolesModal()">ROLLAR</h3><p class="muted" onclick="showRolesModal()">Rollar haqida batafsil</p></div>
+            </div>
+        </div>
+    </section>
+
+   <!-- VIPS / QADIRDONLAR -->
+<section id="vips">
+    <div class="container">
+        <h2 style="font-family:'Chakra Petch',monospace; font-size:32px; margin:0 0 14px">JAMOAMIZDAGI</h2>
+        <p class="muted">MASHXUR YOUTUBERLAR</p>
+        <div class="grid-people" id="vipGrid">
+    
+            <div class="person" onclick="showModal('ENDER_QIZCHA_UZ', 'https://www.youtube.com/@ENDERQIZCHA', 'https://discord.com/users/ENDER_QIZCHA_UZ', 'https://t.me/ENDER_QIZCHA_CHANNEL')">
+                <img src="/img/photo_2023-10-06_21-39-17.jpg" alt="Moderator rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>ENDER_QIZCHA_UZ</b></h3>
+                </div>
+            </div>
+                    <div class="person" onclick="showModal('PIXMOHI', 'https://www.youtube.com/@PIKSMOXI', 'https://discord.com/users/Pixmohi', 't.me/piksmohi')">
+                <img src="/img/photo_2025-07-29_17-50-00.jpg" alt="Admin rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>PIXMOHI</b></h3>
+                </div>
+            </div>
+                    <div class="person" onclick="showModal('FREKO', 'https://www.youtube.com/@Freko_Uz', 'https://discord.gg/kSJtGeQn', 'https://t.me/frekochannel')">
+                <img src="/img/photo_2025-04-08_08-24-27.jpg" alt="Admin rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>FREKO</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('REKER', 'https://www.youtube.com/REKER_UZ', 'https://discord.com/users/REKER', 'https://t.me/Reker_UZ')">
+                <img src="/img/reker.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>REKER</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('READRUK', 'https://t.me/READRUK', 'https://discord.com/users/READRUK', 'https://t.me/READRUK')">
+                <img src="/img/readruk.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>REDRUK</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('LIDER', 'https://www.youtube.com/@LIDERONLINE_', 'https://discordapp.com/users/LIDERONLINE_', 'https://t.me/LIDERONLINE_CHANNEL')">
+                <img src="/img/lider.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>LIDER-ONLINE</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('SHAXINJON', 'https://www.youtube.com/@ShaxinMinecraft', 'https://discordapp.com/users/891988754309476352    ', 'https://t.me/shaxinbekcha')">
+                <img src="/img/shaxin.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>SHAXINJON</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('LIONDER', 'https://www.youtube.com/@Lionderjon', 'https://discordapp.com/users/891988754309476352', 'https://t.me/Lionder_channel')">
+                <img src="/img/lionder.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>LIONDER</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('MEDISON', 'https://www.youtube.com/@Medison_Live', 'https://discordapp.com/users/891988754309476352', 'https://t.me/medisonchanel')">
+                <img src="/img/medison.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>MEDISON</b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('Notric', 'https://www.youtube.com/@NotricUz', 'https://discordapp.com/users/891988754309476352', 'https://t.me/NotricUz')">
+                <img src="/img/notric.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: <b>Notric</b></h3>
+                </div>
+            </div>
+                        <div class="person" onclick="showModal('Notric', 'https://www.youtube.com/@Prismarine_Man', 'https://discordapp.com/users/891988754309476352', 'https://t.me/Prismarine_Man_Uz')">
+                <img src="/img/Prismarin.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: Prismarine UZ<b></b></h3>
+                </div>
+            </div>
+            <div class="person" onclick="showModal('Notric', 'https://www.youtube.com/@DieVixuz', 'https://discordapp.com/users/891988754309476352', 'https://t.me/FasterDieVix')">
+                <img src="/img/dievix.jpg" alt="Lead rasm">
+                <div class="meta">
+                    <div class="badge">MASHXUR YOUTUBER</div>
+                    <h3>Nick: DieVix<b></b></h3>
+                </div>
+            </div>
+       
+            <!-- Add more people here if needed -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- REGISTER FORM -->
+    <!-- <section id="register">
+        <div class="container">
+            <h2 style="font-family:'Chakra Petch',monospace; font-size:32px; margin:0 0 14px">Ro'yxatdan o'tish</h2>
+            <p class="muted">Ma'lumotlaringizni to'liq va to'g'ri kiritishingiz shart. Aks holda arizangiz rad etiladi.</p>
+            <div class="form-wrap">
+                <form id="registerForm" onsubmit="submitForm(event)">
+                    <div class="row two">
+                        <div>
+                            <label for="fullName">F.I.SH (To'liq formatda)</label>
+                            <input type="text" id="fullName" placeholder="Ism Familiya Sharifingiz" required>
+                        </div>
+                        <div>
+                            <label for="birthDate">Tug'ilgan sanangiz (14+)</label>
+                            <input type="date" id="birthDate" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="address">Yashash manzilingiz (To'liq formatda)</label>
+                            <input type="text" id="address" placeholder="Shahar, tuman, ko'cha, uy" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="phone">Telefon raqamingiz (Faqat o'zingizniki)</label>
+                            <input type="tel" id="phone" placeholder="+998 XX XXX XX XX" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="photo">Yuz rasmingiz (Effektsiz va to'liq holatda)</label>
+                            <input type="file" id="photo" accept="image/*" required>
+                            <p class="hint">Rasm aniq va yorug' bo'lishi kerak.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="computerInfo">Kompyuteringiz rasmi</label>
+                            <input id="computerInfo" type="file"  placeholder="Protsessor, videokarta, RAM, OS" required></input>
+                            <p class="hint danger">Kompyuteringiz bo'lmasa afsuski hozirda jamoga olinmaysiz.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="activity">Aktiv bo'lishingiz shart!</label>
+                            <input type="text" id="activity" placeholder="Qancha vaqt ajratasiz?" required>
+                            <p class="hint danger">Yo'qsa bir oy davomida jamoadan olinishingiz mumkin.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <button type="submit" class="btn btn-cta" style="width:100%">Yuborish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container center">
+            <p>© 2025 TBT – TEAM. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Modal Title</h3>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modalBody">
+                MALUMOTLAR !
+            </div>
+            <div class="modal-links">
+                <a id="modalYoutube" href="#" target="_blank">YouTube</a>
+                <a id="modalDiscord" href="#" target="_blank">Discord</a>
+                <a id="modalTelegram" href="#" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ROLES MODAL -->
+    <div class="modal" id="rolesModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">ROLLAR HAQIDA BATAFSIL</h3>
+                <span class="modal-close" onclick="closeRolesModal()">&times;</span>
+            </div>
+            <div class="roles-modal">
+                <div class="role-item">
+                    <h4 class="role-title">@🌙FAMILY</h4>
+                    <p class="role-desc">Bu rol hech kimga berilmaydi. Berilgan taqdirda ham serverga juda sodiq va biz bilan ancha yaqin inson bo'lishi kerak!</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙ENG QADIRDONLAR</h4>
+                    <p class="role-desc">Bu serverdagi eng katta ro'l hisoblanadi va bu rolni olish uchun serverda 7,8 oy davomida aktiv bo'lishlari lozim. Eslatib o'taman, serverda qanchadan beri borligi emas, qanchadan beri aktivligi hisoblanadi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙ADMIN</h4>
+                    <p class="role-desc">Bu rolni olish uchun siz serverda 5,6 oy davomida aktiv bo'lishingiz lozim. Eslatib o'taman, serverda qanchadan beri borligi emas, qanchadan beri aktivligi hisoblanadi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙MODERATOR</h4>
+                    <p class="role-desc">Bu rolni olish uchun siz serverda 3,4 oy davomida aktiv bo'lishingiz lozim! Eslatib o'taman, serverda qanchadan beri borligi emas, qanchadan beri aktivligi hisoblanadi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙JIGARLAR</h4>
+                    <p class="role-desc">Bu rolni olish uchun siz ancha yaxshi qardosh jigarlardan bo'lishingiz kerak!</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙STAFF</h4>
+                    <p class="role-desc">Bu rol jamoada 2 oy davomida aktiv bo'lganlar uchun beriladi. Eslatib o'taman, serverda qanchadan beri borligi emas, qanchadan beri aktivligi hisoblanadi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙TBT BOOSTER</h4>
+                    <p class="role-desc">Bu rol serverga Boost tashovchilar uchun beriladi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙YOUTUBER</h4>
+                    <p class="role-desc">Bu rolni olish uchun sizning YouTube kanalingizda 5k dan ko'proq obunachi va har bir videoda ham shunga yarasha ko'proq ko'rishlar bo'lishi kerak. Eng asosiysi, kompotcha videolar bo'lmasligi lozim. Bularning hammasi tekshirib olinadi!</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙THE BEST</h4>
+                    <p class="role-desc">Bu rol jamoada 1 oy davomida aktiv bo'lganlar uchun beriladi. Eslatib o'taman, serverda qanchadan beri borligi emas, qanchadan beri aktivligi hisoblanadi.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙ACTIVE</h4>
+                    <p class="role-desc">Bu rolni olish uchun siz serverda Voice levelingiz 10dan oshgan bo'lishi kerak!</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙MINECRAFT, @🌙PUBG, @🌙CS 2, @🌙DOTA 2</h4>
+                    <p class="role-desc">Bu rollarni olish uchun siz shu o'yinlarni o'ynashilar kerak.</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙EDITOR</h4>
+                    <p class="role-desc">Bu rolni olish uchun siz zo'r video edit qilishingiz kerak va bu narsani ekran yoqib isbotlab berishingiz kerak!</p>
+                </div>
+                <div class="role-item">
+                    <h4 class="role-title">@🌙GYM BRO</h4>
+                    <p class="role-desc">Bu rol zalga chiqadigan bitta gap bilan kachok bollaga beriladi. Buni esa siz rasm tashab yoki kamera yoqib isbotlashingiz lozim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
